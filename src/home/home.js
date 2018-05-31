@@ -10,8 +10,6 @@ class Home extends Component {
   
   constructor(props){
     super(props)
-
-    this.localStorage = new LocalStorage();
  
     this.state = {originList: this.shuffle(this.getAnimalsData()),
                   animals: [],
@@ -25,7 +23,7 @@ class Home extends Component {
   }
   
   getAnimalsData(){
-      let animals = this.localStorage.getFromLocalData('data');
+      let animals = LocalStorage.getFromLocalData('data');
     return animals;
   }
 
@@ -66,7 +64,7 @@ class Home extends Component {
 
   removeAnimal = (id) => {
     
-    this.localStorage.removeItem(id);
+    LocalStorage.removeItem(id);
 
     this.removedIds.push(id);
     let index = this.findItemIndexById(id);
@@ -79,7 +77,7 @@ class Home extends Component {
   
   addNewAnimal = (animal) => {
  
-    this.localStorage.addItem(animal);
+    LocalStorage.addItem(animal);
 
     let newArray = this.state.originList;
     newArray.unshift(animal);
@@ -143,7 +141,7 @@ class Home extends Component {
 
   toggleFavorite = (id) => {
 
-      this.localStorage.toggleFavorite(id);
+      LocalStorage.toggleFavorite(id);
 
       var index = this.findItemIndexById(id);
       var newArray = this.state.animals;

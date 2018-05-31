@@ -100,4 +100,4 @@ class LocalStorage {
 
 }
 
-export default LocalStorage;
+export default LocalStorage = new LocalStorage();

@@ -67,6 +67,7 @@
     color: white;
     padding-left: 30px;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 
@@ -86,6 +87,8 @@
 
 .cube-icons{
 
+    position: absolute;
+
     display: flex;
     flex-direction: row-reverse;
 
@@ -103,8 +106,13 @@
     background-position-x: center;
     background-size: cover;
     margin: 2px;
+    transition: 0.3s;
 }
 
+.cube-icon:hover{
+    width: 25px;
+    height: 25px;
+}
 
 .cube-trash{
     background-image: url('../assets/trash.png');

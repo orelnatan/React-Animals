@@ -68,7 +68,7 @@ class Cube extends Component {
 
                 {item.isTrash && <div className = 'cube-icons' >
                     <div className = 'cube-icon cube-shrede' >  </div>
-                    <div className = 'cube-icon cube-recycle' >  </div>
+                    <div className = 'cube-icon cube-recycle'  >  </div>
                     {item.isVegitarian && <div className = 'cube-icon cube-vegitarian' > </div> }
                 </div>}
 

@@ -9,9 +9,7 @@ class RecycleBin extends Component{
     constructor(props){ 
         super(props)
    
-        this.localStorage = new LocalStorage();
-
-        this.state = {items: this.localStorage.getFromLocalData('trash'), };
+        this.state = {items: LocalStorage.getFromLocalData('trash'), };
     }
 
   
