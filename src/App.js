@@ -30,7 +30,7 @@ class App extends Component {
   }
   
 
-
+/////////////////////orel
   navigateTo = (routeReference) => {
      //routeReference.click();
      let route = '/recycleBin';
