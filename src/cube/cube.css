@@ -1,0 +1,136 @@
+
+.cube-mainWrapper{
+
+    display: flex;
+    
+    width: 23%;
+}
+
+.cube-bodyWrapper{
+
+    position: relative;
+
+    display: flex;
+
+    margin: 10px;
+    width: 100%;
+    height: 150px;
+
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 5px;
+    cursor: pointer;
+}
+
+.cube-image{
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: black;
+    background-size: cover;
+}
+
+.cube-glass{
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: black;    
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.cube-glassHovered{
+    opacity: 0.3 !important;
+}
+
+.cube-content{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.cube-header{
+    font-weight: bold;
+    color: white;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+
+.cube-details{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.cube-detail{
+    padding-left: 30px;
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+}
+
+
+.cube-icons{
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    width: 100%;
+}
+
+
+.cube-icon{
+    
+    width: 20px;
+    height: 20px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    margin: 2px;
+}
+
+
+.cube-trash{
+    background-image: url('../assets/trash.png');
+}
+
+.cube-vegitarian{
+    display: block;
+    background-image: url('../assets/vegetables.png');
+}
+
+.cube-star{
+    display: block;
+}
+
+.cube-goldStar{
+    background-image: url('../assets/favorite.png');
+}
+
+.cube-goldStar{
+    background-image: url('../assets/unFavorite.png');
+}
+
+.cube-shrede{
+    background-image: url('../assets/shredder.png');
+}
+
+.cube-recycle{
+    background-image: url('../assets/recycle.png');
+}

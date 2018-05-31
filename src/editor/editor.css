@@ -1,0 +1,174 @@
+
+.editor-mainWrapper{
+
+    position: fixed;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+ 
+    background-color:rgba(0, 0, 0, 0.7);
+    z-index: 1;
+
+    animation: editorFadeIn 0.7s ease;
+}
+
+.editorMainWrapperFadeOut{
+    animation: editorFadeOut 1s ease;
+    animation-fill-mode: forwards;
+}
+
+
+.editor-bodyWrapper{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 600px;
+    height: 400px;
+    background-color: #222222;
+}
+
+
+.editor-icon{
+    
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+    
+    cursor: pointer;
+    transition: 0.5s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.editor-icon:hover{
+    opacity: 0.7;
+}
+
+
+.editor-closeEditor{
+
+    margin: 15px;
+    right: 0;
+    top: 0;
+
+    background-image: url('../assets/X.png');
+}
+
+
+.editor-inputs{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    width: 90%;
+}
+
+
+.editor-prevView{
+    display: flex;
+    flex-direction: row;
+
+    width: 90%;
+}
+
+
+.editor-image{
+
+    width: 30%;
+    height: 132px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: black;
+    background-size: cover;
+}
+
+
+.editor-input{
+    width: 40%;
+    margin-top: 10px;
+}
+
+
+.editor-inputBox{
+
+    width: 100%;
+    height: 25px;
+
+    background-color: #222222;
+    text-align: center;
+    border-width: 0.3px;
+    border-color: black;
+    color: white;
+}
+
+
+.editor-toggles{
+
+    display: flex;
+    flex-direction: row;
+
+    width: 90%;
+}
+
+
+.editor-toggle{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+
+.editor-togglesStyle{
+    width: 20px;
+    height: 20px;
+}
+
+
+.editor-toggleName{
+
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+
+.editor-controls{
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    width: 90%;
+}
+
+
+/* ///////////////////////////////////// Animations ////////////////////////////// */
+
+@keyframes editorFadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes editorFadeOut{
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}

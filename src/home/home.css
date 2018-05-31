@@ -1,0 +1,46 @@
+
+.home-mainWrapper{
+
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-width: 1024px;
+}
+
+
+.home-bodyWrapper{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  width: 1024px;
+}
+
+
+.home-recycleBinIcon{
+
+    position: fixed;
+
+    width: 70px;
+    height: 70px;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-image: url('../assets/recycleBin.png');
+    transition: 0.5s;
+}
+
+.home-recycleBinIcon:hover{
+  opacity: 0.7;
+}

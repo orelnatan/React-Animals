@@ -1,0 +1,48 @@
+
+.cubes-mainWrapper{
+
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    margin-top: 100px;
+}
+
+
+.cubes-bodyWrapper{
+   
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+
+   width: 100%;
+}
+
+
+.cubes-addCube{
+
+    display: flex;
+    flex-direction: row;
+
+    margin: 10px;
+    width: 21%;
+    height: 150px;
+
+    box-sizing: border-box;
+    border: 5px solid white;
+    cursor: pointer;
+    transition: 0.5s;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: black;
+    background-size: 30%;
+    background-position-y: center;
+    background-image: url('../assets/plus.png');
+}
+
+.cubes-addCube:hover{
+    opacity: 0.6;
+    border-color: #cacaca;
+}

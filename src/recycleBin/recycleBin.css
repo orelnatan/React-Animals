@@ -1,0 +1,24 @@
+
+.recycleBin-mainWrapper{
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-width: 1024px;
+}
+
+
+.recycleBin-bodyWrapper{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 1024px;
+}
