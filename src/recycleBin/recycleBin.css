@@ -22,3 +22,25 @@
 
     width: 1024px;
 }
+
+
+.recycleBin-returnIcon{
+
+    position: fixed;
+
+    width: 70px;
+    height: 70px;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    background-image: url('../assets/return.png');
+    transition: 0.5s;
+}
+
+.recycleBin-returnIcon:hover{
+  opacity: 0.7;
+}

@@ -72,17 +72,39 @@ class LocalStorage {
         this.updateLocalData(newData);
     }
 
+    shredItemForEver(id){
+
+        var newData = this.localData;
+
+        var index = this.findItemIndexById(newData.trash, id);
+        newData.trash.splice(index, 1);
+        this.updateLocalData(newData);
+    }
+  
     addItem(item){
 
-        let newData = this.localData;
+        var newData = this.localData;
 
+        newData.data.push(item);
+        this.updateLocalData(newData);
+    }
+
+    recycleItem(id){
+
+        var newData = this.localData;
+
+        var index = this.findItemIndexById(newData.trash, id);
+        var item = newData.trash[index];
+        item.isTrash = false;
+
+        newData.trash.splice(index, 1);
         newData.data.push(item);
         this.updateLocalData(newData);
     }
 
     isExist(id, field){
 
-        let newData = this.localData;
+        var newData = this.localData;
 
         return this.findItemIndexById(newData[field], id) != -1 ? true : false;
     }

@@ -22,6 +22,10 @@ class Cubes extends Component {
       this.props.onStarClicked(id);
   }
 
+  recycleItem = (id) => {
+    this.props.onRecycleItem(id);
+  }
+
 
   render() {
 
@@ -33,7 +37,7 @@ class Cubes extends Component {
         <div className = 'cubes-bodyWrapper' >
            {addCube && <div className = 'cubes-addCube' onClick = {this.addCube} > </div>}
               {list.map((item) =>     
-                  <Cube key = {item.id.toString()}  item = {item}  onRemoveCube = {this.removeCube} onStarClicked = {this.starClicked}  />
+                  <Cube key = {item.id.toString()}  item = {item}  onRemoveCube = {this.removeCube} onStarClicked = {this.starClicked} onRecycleItem = {this.recycleItem}  />
               )}
         </div>
       </div>

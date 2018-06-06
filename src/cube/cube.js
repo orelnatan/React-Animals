@@ -35,6 +35,12 @@ class Cube extends Component {
   }
 
 
+  recycleItem(event, id){
+    event.stopPropagation();
+    this.props.onRecycleItem(id);
+  }
+
+
   starClicked(event, id){
      event.stopPropagation();
      this.props.onStarClicked(id);
@@ -67,8 +73,8 @@ class Cube extends Component {
                 </div>}
 
                 {item.isTrash && <div className = 'cube-icons' >
-                    <div className = 'cube-icon cube-shrede' >  </div>
-                    <div className = 'cube-icon cube-recycle'  >  </div>
+                    <div className = 'cube-icon cube-shrede' onClick = {(e) => this.removeItem(e, item.id)} >  </div>
+                    <div className = 'cube-icon cube-recycle' onClick = {(e) => this.recycleItem(e, item.id)}  >  </div>
                     {item.isVegitarian && <div className = 'cube-icon cube-vegitarian' > </div> }
                 </div>}
 
