@@ -157,8 +157,6 @@ class Home extends Component {
 
   navigateTo = (referenceName) => {
     
-      var reference = this.refs[referenceName];
-      this.props.onNavigateTo(reference);
   }
 
 
@@ -187,8 +185,8 @@ class Home extends Component {
                                                             onStarClicked = {this.toggleFavorite}  />
               </div>
 
-              <div className = 'home-recycleBinIcon' onClick = {() => this.navigateTo('binReference')} > 
-                  <a ref = 'binReference' href = '/recycleBin' >  </a> 
+              <div className = 'home-recycleBinIcon' onClick = {() => this.navigateTo()} > 
+                  
               </div>
 
           </div>

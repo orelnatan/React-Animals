@@ -31,8 +31,8 @@ class App extends Component {
   
 
 /////////////////////orel
-  navigateTo = (routeReference) => {
-     //routeReference.click();
+  navigateTo = () => {
+
      let route = '/recycleBin';
       this.props.history.push(route);
   }
@@ -53,8 +53,7 @@ class App extends Component {
                     
                     <Route exact path = '/'  component = { () => <Home onNavigateTo = {this.navigateTo} /> } />
                     <Route path = '/home' component = { () => <Home onNavigateTo = {this.navigateTo} /> } />
-                    <Route path = '/recycleBin' component = { () => <RecycleBin onNavigateTo = {this.navigateTo} /> } />
-
+                    
                 </Switch>
 
                  
@@ -70,6 +69,8 @@ class App extends Component {
 
 export default withRouter(App);
 
+
+//<Route path = '/recycleBin' component = { () => <RecycleBin onNavigateTo = {this.navigateTo} /> } />
 
 // import React, { Component } from 'react';
 //import './filter.css';
